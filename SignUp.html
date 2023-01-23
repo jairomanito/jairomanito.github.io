@@ -142,6 +142,34 @@ h1{
   font-size: 50px;
 }
 
+body{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  min-height: 100vh;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  width: min(100%,425px);
+  background: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.form-title{
+  position: relative;
+  padding-left: absolute;
+
+}
+
+.form-title::before{
+  content: '';
+  position: absolute;
+}
     </style>
 </head>
 
