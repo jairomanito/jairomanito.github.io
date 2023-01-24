@@ -94,48 +94,40 @@ hr {
   margin-bottom: 25px;
 }
 
-
-button {
-  background-color: #219c6fe5;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  
-  opacity: 0.9;
+#box{
+width: 200px;
+height: 200px;
+margin: 10px;
+padding: 10px;
+background-color: rgba(196, 112, 52, 0.438);
+border-radius: 30px;
+border: 2px solid burlywood ;
 }
 
-button:hover {
-  opacity:1;
+label{
+    padding: 5px;
 }
 
-
-.cancelbtn {
-  padding: 12px;
-  background-color: #e9554a;
+input{
+    padding: 5px;
+    border-radius: 20px;
+    border-color: gainsboro;
 }
 
-
-.cancelbtn, .signupbtn {
-  padding: 12px;
+#bod{
+   color: rgb(0, 0, 0);
+   border: solid 1px;
+   border-radius: 20px;
+   background-color: burlywood;  
 }
 
-
-.container {
-  padding: 12px;
+body{
+    font-family: arial;
 }
 
-
-.clearfix::after {
- 
-  display: table;
+a{
+    text-decoration: none;
 }
-
-
-  .cancelbtn, .signupbtn {
-    padding: 12px;
-  }
 
 h1{
   font-style: times;
@@ -152,24 +144,6 @@ body{
   align-items: center;
 }
 
-.form{
-  width: min(100%,425px);
-  background: white;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 40px;
-  border-radius: 10px;
-}
-
-.form-title{
-  position: relative;
-  padding-left: absolute;
-
-}
-
-.form-title::before{
-  content: '';
-  position: absolute;
-}
     </style>
 </head>
 
@@ -196,27 +170,18 @@ body{
         </div>
         <a href="https://www.facebook.com/lynettetolo.manito">Contact</a> 
       </div>
-      <form action="/action_page.php" style="border:1px solid rgb(139, 133, 133)">
-        <div class="container">
-          <h1>Sign Up</h1>
-          <p>Fill in this form to create an account.</p>
-          <hr>
-      
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email">
-      
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw">
-      
-          <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat">
-        
-      
-          <div class="clearfix">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <button type="submit" class="signupbtn">Sign Up</button>
-          </div>
-        </div>
+      <form id="box">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+        <button id="bod"><a href="index.html">submit</a></button>
       </form>
 </body>
 </html>
