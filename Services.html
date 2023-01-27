@@ -85,41 +85,54 @@ body {
   background-color: rgb(255, 231, 208);
 }
 
-.product-grid {
-  display: flex;
-  flex-wrap: wrap;
+div.gallery {
+  margin: 5px;
+  border: 3px solid rgba(216, 113, 65, 0.342);
+  float: left;
+  width: 180px;
 }
 
-.product {
-  position: relative;
-  width: 33%;
-  padding: 20px;
+div.gallery:hover {
+  border: 3px solid rgba(42, 52, 54, 0.74);
 }
 
-.product-image {
-  width: 200px;
+div.gallery img {
+  width: 100%;
+  height: auto;
 }
 
-.product-price {
-  position: center;
-  color: rgba(117, 61, 29, 0);
-  font-size: 20px;
+div.desc {
+  padding: 10px;
+  text-align: center;
+  color: whitesmoke;
+  font-family: cursive;
+
 }
 
-.product:hover .product-price {
-  display: none;
+h1{
+  font-size: 50px;
 }
 
-.product:hover:{
-  content: attr(data-price);
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #000;
-  color: rgb(117, 61, 29);
-  padding: 4px;
-  font-size: 14px;
+.pasta{
+  padding-right: 700px;
+  color: whitesmoke;
 }
+
+.pastries{
+  padding-right: 700px;
+  color: whitesmoke;
+}
+
+.beverage{
+  color: whitesmoke;
+}
+
+:active :hover{
+background-color: rgb(0, 0, 0);
+transition: 0.5s;
+color: aliceblue;
+}
+
     </style>
 </head>
 
@@ -152,20 +165,135 @@ body {
       <center>
         <h1>OPEN 6:00AM - 7:00PM</h1>
     </center>
-    <h1>Coffee Section</h1>
-    <div class="product-grid">
-      <div class="product">
-        <img src="black.jpg" alt="black Coffee" class="product-image">
-        <p class="product-price">₱75.00</p>
-      </div>
-      <div class="product">
-        <img src="machiato.jpg" alt="caramel machiato" class="product-image">
-        <p class="product-price">₱90.00</p>
-      </div>
-      <div class="product">
-        <img src="cappuccino.jpg" alt="cappuccino" class="product-image">
-        <p class="product-price">₱98.00</p>
-      </div>
+    <h1 class="beverage">BEVERAGE</h1>
+    <div class="gallery">
+      <a target="_blank" href="001.jpg">
+        <img src="001.jpg" alt="Black Coffee" width="600" height="400">
+      </a>
+      <div class="desc">Black Coffee</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="002.jpg">
+        <img src="002.jpg" alt="Latte" width="600" height="400">
+      </a>
+      <div class="desc">Caramel Latte</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="003.jpg">
+        <img src="003.jpg" alt="Iced Coffee" width="600" height="300">
+      </a>
+      <div class="desc">Iced Coffee</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="004.jpg">
+        <img src="004.jpg" alt="Capuccino" width="600" height="400">
+      </a>
+      <div class="desc">Capuccino</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="005.jpg">
+        <img src="005.jpg" alt="Tea" width="600" height="400">
+      </a>
+      <div class="desc">Tea</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="006.jpg">
+        <img src="006.jpg" alt="matcha" width="600" height="400">
+      </a>
+      <div class="desc">Matcha Tea</div>
+    </div>
+    
+    <h1 class="pastries">Juices & Smoothies</h1>
+    <div class="gallery">
+      <a target="_blank" href="007.jpg">
+        <img src="007.jpg" alt="Juices" width="600" height="400">
+      </a>
+      <div class="desc">Juices</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="008.jpg">
+        <img src="008.jpg" alt="Smoothies" width="600" height="400">
+      </a>
+      <div class="desc">Smoothies</div>
+    </div>
+    
+    <br>
+    <h1 class="pastries">PASTRIES</h1>
+    <div class="gallery">
+      <a target="_blank" href="004.jpg">
+        <img src="004.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="004.jpg">
+        <img src="004.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="004.jpg">
+        <img src="004.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="004.jpg">
+        <img src="004.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+    <br>
+    <h1 class="pasta">PASTA</h1>
+    <div class="gallery">
+      <a target="_blank" href="004.jpg">
+        <img src="004.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="004.jpg">
+        <img src="004.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="004.jpg">
+        <img src="004.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="004.jpg">
+        <img src="004.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="004.jpg">
+        <img src="004.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="004.jpg">
+        <img src="004.jpg" alt="Mountains" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
     </div>
 <br>
 <br>
